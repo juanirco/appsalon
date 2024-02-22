@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton {
+    @include m.boton(v.$azul, v.$blanco);
+    margin: 8rem auto 2rem;
+    text-transform: uppercase;
+    
+}
+
+.boton-actualizar {
+    @include m.boton(v.$azul, v.$blanco);
+    margin: 0.5rem auto;
+    text-transform: uppercase;
+    @include m.tablet{
+        width: 100%;
+    }
+    
+}
+
+.botonInv {
+    @include m.boton(v.$blanco, v.$azul);
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    transition: transform 300ms ease;
+    @include m.tablet{
+        width: 35%;
+    }
+
+    &:hover {
+        background-color: darken(v.$blanco, 20%);
+        transform: scale(1.1);
+    }
+}
+
+.boton-eliminar {
+    @include m.boton(v.$rojo, v.$blanco);
+    @include m.tablet{
+        width: 100%;
+    }
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}

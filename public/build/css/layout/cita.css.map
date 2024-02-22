@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/cita.scss","layout/cita.css"],"names":[],"mappings":"AAEI,sBACI,iBCDR","file":"cita.css","sourcesContent":[".seccion {\n\n    .text-center{\n        text-align: center;\n    }\n}",".seccion .text-center {\n  text-align: center;\n}"]}
