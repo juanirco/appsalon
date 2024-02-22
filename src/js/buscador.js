@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function iniciarApp() {
     buscarPorFecha();
-
 }
 
 function buscarPorFecha() {

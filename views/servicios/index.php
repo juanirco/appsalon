@@ -3,14 +3,14 @@
 
 <?php if (isset($_SESSION['admin'])) { ?>
     <div class="barra-servicios">
-        <a href="/admin" class="botonInv">Ver Citas</a>
+        <a href="/admin" class="boton">Ver Citas</a>
     </div>
 <?php }?>
 <h1 class="nombre-pagina">Administracion De Servicios</h1>
 <p class="descripcion-pagina">Crea, edita o elimina los servicios</p>
 
 
-<a href="/servicios/crear" class="boton">Nuevo Servicio</a>
+<a href="/servicios/crear" class="botonInv">Nuevo Servicio</a>
     
 <ul class="servicios">
     <?php foreach($servicios as $servicio) { ?>

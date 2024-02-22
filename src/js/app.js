@@ -107,7 +107,7 @@ function paginaSiguiente() {
 async function consultarAPI() // se usa async para que la función se ejecute mientras se ejecutan otras y no tenga que esperar a que esta se complete y tiene que ir complementada con await la cual se usa para esperar por alguna acción para que otra pase
 {
  try {
-    const url = `${location.origin}api/servicios`;
+    const url = '/api/servicios';
     const resultado = await fetch(url);
     const servicios = await resultado.json(); // con el console log en resultado se puede encontrar el .json en PROTOTYPE // Esto se usa porque en javascript no existen los arreglos asociativos, entonces lo que hacemos es convertirlo a un objeto que eso si existe en javascript y es basicamente el arreglo asociativo de javascript
     mostrarServicios(servicios);
@@ -329,7 +329,7 @@ async function reservarCita(){ // desde aquí
 
     try {
         // Peticion hacia la API
-        const url = `${location.origin}/api/citas`;
+        const url = '/api/citas';
 
         const respuesta = await fetch(url, {
             method: 'POST',
