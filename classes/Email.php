@@ -19,11 +19,11 @@ class Email {
         // Crear el objeto de email
         $email = new PHPMailer();
         $email->isSMTP();
-        $email->Host = $_ENV['MAIL_HOST'];
+        $email->Host = $_ENV['EMAIL_HOST'];
         $email->SMTPAuth = true;
-        $email->Port = $_ENV['MAIL_PORT'];
-        $email->Username = $_ENV['MAIL_USER'];
-        $email->Password = $_ENV['MAIL_PASS'];
+        $email->Port = $_ENV['EMAIL_PORT'];
+        $email->Username = $_ENV['EMAIL_USER'];
+        $email->Password = $_ENV['EMAIL_PASS'];
 
         $email->setFrom('cuentas@appsalon.com');
         $email->addAddress('cuentas@appsalon.com', 'AppSalon.com');
@@ -48,11 +48,11 @@ class Email {
         // Crear el objeto de email
         $email = new PHPMailer();
         $email->isSMTP();
-        $email->Host = $_ENV['MAIL_HOST'];
+        $email->Host = $_ENV['EMAIL_HOST'];
         $email->SMTPAuth = true;
-        $email->Port = $_ENV['MAIL_PORT'];
-        $email->Username = $_ENV['MAIL_USER'];
-        $email->Password = $_ENV['MAIL_PASS'];
+        $email->Port = $_ENV['EMAIL_PORT'];
+        $email->Username = $_ENV['EMAIL_USER'];
+        $email->Password = $_ENV['EMAIL_PASS'];
 
         $email->setFrom('cuentas@appsalon.com');
         $email->addAddress('cuentas@appsalon.com', 'AppSalon.com');
